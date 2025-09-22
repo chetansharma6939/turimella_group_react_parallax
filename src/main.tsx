@@ -7,7 +7,7 @@ import './styles/style.css'
 
 function Root() {
   useEffect(() => {
-    const lenis = new Lenis({ smoothWheel: true, smoothTouch: false })
+   const lenis = new Lenis({ smoothWheel: true })
     const raf = (time: number) => { lenis.raf(time); requestAnimationFrame(raf) }
     requestAnimationFrame(raf)
   }, [])
