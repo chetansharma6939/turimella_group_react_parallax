@@ -18,7 +18,7 @@ function Root() {
     </ParallaxProvider>
   )
 }
-
+// newchanges xyz
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode><Root /></React.StrictMode>,
 )
