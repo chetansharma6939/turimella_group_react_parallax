@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-scroll-parallax'
+import HeroGraphic from './HeroGraphic'
 
 export const Hero: React.FC = () => {
   return (
@@ -31,11 +32,7 @@ export const Hero: React.FC = () => {
           </motion.div>
           <div className="mt-4 text-slate-400 text-sm">Independent • Pragmatic • Delivery-focused</div>
         </div>
-        <div aria-hidden className="h-80 sm:h-[28rem] bg-gradient-to-br from-indigo-500/20 to-cyan-400/10 rounded-3xl border border-white/10 shadow-2xl flex items-center justify-center">
-          <Parallax translateY={[-20, 20]}>
-            <div className="w-40 h-40 rounded-full bg-indigo-500/40 blur-2xl" />
-          </Parallax>
-        </div>
+        <HeroGraphic />
       </div>
     </section>
   )
